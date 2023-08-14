@@ -1,0 +1,499 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Mrinal Walia | Data Scientist"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+    - identifier: gallery
+    #  name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Mrinal Walia | Data Science Portfolio"
+  description: Mrinal Walia | Data Science Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/aa.jpg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: " Data Scientist | Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello World! My name is"
+    title: "Mrinal Walia."
+    subtitle: "I love exploring DATA as it is the new SCIENCE!"
+    content: |-
+      I am a Junior Data Scientist with 2.4+ years of proactive industry experience and a strong commitment to ongoing learning and innovative ideation.
+      
+      Presently, I have recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor in Fall 2023. Concurrently, I am engaged in a Data Scientist Co-op position at Loblaws Companies Limited from January to August 2023. In this role, I contribute to the optimization of MLOps pipelines and conduct analysis on competitor datasets to extract valuable insights for the business.
+    image: /aa.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/MrinalWalia_Resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/abhiwalia15
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/mrinal-walia-b0981b158/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "ABOUT ME"
+    image: "/me.jpeg"
+    content: |-
+      I am thrilled to express my interest in the **Data Scientist** role with my data analysis & analytics skills and AI experience. I am excited to contribute innovative solutions to iconic brands.
+
+      At my most recent employer at [Loblaws Companies Limited](https://www.linkedin.com/company/loblaw-companies-limited/mycompany/verification/), I achieved milestones like enhanced backtesting leading to a **$35M revenue boost**, revamped PARROT pipeline, competitor analysis, and a 30% newsletter engagement increase with a proven results-driven approach.
+
+      Prior to my Master's, I worked as a **Junior Data Scientist** for 2.4 years at [TESSACT](https://tessact.com/) where I enhanced ML model's product metrics by 1.35%, developed end-to-end cloud data solutions using **Python, GCP, and SQL**, and collaborated with senior Data Scientists, building scalable deployment scripts.
+
+      I am an active **open-source contributor** who loves to optimize machine learning models and make valuable predictions out of data. I also share my thoughts and knowledge with others by **writing Articles on Data Science, Machine Learning, GenerativeAI, LLMs, Open-Source, and more.**
+
+      I have been awarded as [OpenMined Featured Contributor](https://blog.openmined.org/openmined-featured-contributor-november-2022/), multiple times winner for [Analytics Vidhya Blogathons](https://www.linkedin.com/feed/update/urn:li:activity:6920431433605885952/), and the top [GitHub](https://github.com/abhiwalia15?tab=overview&from=2020-12-01&to=2020-12-31) user in India in the year 2020 by making 3300+ contributions to 300+ repositories.
+
+    skills:
+      enable: true
+      title: "Here is a list of the technologies that I'm familiar with!"
+      items:
+        - "Python, R, Java"
+        - "PyTorch, Tensorflow, Neural Networks"
+        - "Data Analysis & Visualizations" 
+        - "Machine Learning Modelling"
+        - "Airflow, PowerBI, AWS"
+        - "Spark, Hadoop, & GCP"
+        - "SQL, MySQL, PostgreSQL"
+        - "Git, Jira, MS Tools"
+
+  # Experience
+  experience:
+    enable: true
+    title: "PROFESSIONAL EXPERIENCE"
+    items:
+      - job: "Data Scientist | Co-op"
+        company: "Loblaws Companies Limited"
+        companyUrl: "https://www.loblaws.ca/"
+        date: "Jan 2023 - Aug 2023"
+        featuredLink:
+          enable: true
+          name: "Promo Optimization Engine (Python, GCP, SQL, VMs, Jupyter Lab, BackTesting)"
+          url: "https://parrot.dia.loblaw.ca/login"
+
+        info:
+          enable: true
+          content: I worked as a data scientist for 8 months at loblaws.  
+        content: |- 
+          - Developed and executed an enhanced backtesting methodology for wholesale store groups, resulting in an additional $35M in yearly revenue (based on yearly revenue in 2022).
+          - Pioneered the revamp of rating metrics for the backtesting pipeline of Promo Optimization Tool, introducing more interpretable and comprehensive metrics to evaluate model performance.
+          - Performed data analysis to identify competitors to Loblaws Divisions based on price differences for various products and integrated the feature to the front-end tool for Business to access the competition pricings.
+          - Spearheaded the development of a comprehensive newsletter team, resulting in a 30% increase in engagement.
+
+      - job: "Data Scientist | Technical Writer"
+        company: "OpenMined"
+        companyUrl: "https://openmined.github.io/PySyft/index.html"
+        date: "May 2022 - Dec 2022"
+        featuredLink:
+          enable: true
+          name: "PySyft (rST, Markdown, Canva, Figma, Git, Slack, Notion, Python, SQL, Jupyter Notebook)"
+          url: "https://github.com/OpenMined/PySyft"
+        info:
+          enable: true
+          content: I worked as a data scientist-technical writer for 8 months at openmined's PySyft library.
+        content: |-
+          - Executed privacy-preserving machine learning and federated learning algorithms from PySyft library on sensitive and real private data.
+          - Built a one-click end-to-end testing CI/CD pipeline using GitHub actions. 
+          - Created comprehensive Jupyter Notebooks guides and tutorials (Pull Request: #6633, #6669, #6759, https://github.com/OpenMined/PySyft/pulls/abhiwalia15) to facilitate knowledge sharing and collaboration within the open-source data science community. 
+
+
+      - job: "Data Scientist | Junior"
+        company: "TESSACT"
+        companyUrl: "https://tessact.com/"
+        date: "May 2020 - Apr 2022"
+        info:
+          enable: true
+          content: I worked as a junior data scientist for 2 years at TESSACT.
+        featuredLink:
+          enable: true
+          name: "Tech (Python, OpenCV, AWS [DynamoDB, S3, SageMaker], PySpark, Jira, Git, TensorFlow, NLP)"
+          #url: "https://www.linkedin.com/in/mrinal-walia-b0981b158/details/experience/"
+        content: |-
+            - Improved RMSE and LogLoss metric of a machine learning model for a FinTech project by 1.35% by tactfully framing business problems and communicating challenges and results to key partners.
+            - Implemented end-to-end data solutions using cloud platforms, applying advanced analytical methods to manipulate and analyze large, complex datasets for actionable insights.
+            - Collaborated with cross-functional teams, including senior Data Scientists, to develop and implement scalable deployments scripts using SQL query processing methods in production environments for CI/CD.
+            - Designed and integrated various ETL processes using cutting-edge technologies such as AWS S3, Single Store, Lambda, Kafka, Cloud Watch, EC2, and API Gateway for efficient data processing and management.
+            - Consolidated data scraping strategies, encompassing dynamic scraping and API extraction, to prepare datasets. 
+            - Developed and administered a robust Data Quality Validation Framework, establishing rules to ensure comprehensive data quality checks and processes. 
+
+
+      - job: "Data Scientist | Intern"
+        company: "TESSACT"
+        companyUrl: "https://tessact.com/"
+        date: "Jan 2020 - Apr 2020"
+        info:
+          enable: true
+          content: I worked as an intern data scientist for 4 months at TESSACT.
+        featuredLink:
+          enable: true
+          name: "Tech (Python, OpenCV, AWS [DynamoDB, S3, SageMaker], PySpark, Jira, Git, TensorFlow, NLP)"
+          #url: "https://www.linkedin.com/in/mrinal-walia-b0981b158/details/experience/"
+        content: |-
+          - Collected, analyzed, processed, and modelled data (5M+) to create actionable plans for ongoing projects in given timeframe.
+          - Performed automated data labelling and annotations to multiple classes of data for training machine learning models. 
+          - Implemented and tested new machine learning models by generating quality assurance plan and test specifications.
+          - Analyzed and designed both data and technical requirements with respective team lead and other team members.
+          - Planned timely meetings to communicate efficiently with team lead and interns on project progress.
+          - Executed back-end pipeline development of ML models (AWS + Spark) based on client’s requirements.
+
+      - job: "AI/ ML Design Engineer | Intern"
+        company: "Morph Digital"
+        companyUrl: "https://www.getmorph.com/"
+        date: "Jun 2019 - Aug 2019"
+        info:
+          enable: true
+          content: I worked as an intern machine learning engineer for 3 months at Morph.
+        featuredLink:
+          enable: true
+          name: "Nebulizer Mask Detection (Python, TensorFlow, MySQL, OpenCV, Jupyter Notebook, RestAPIs)"
+        content: |-
+          - Programmed an image classification pipeline for detecting face nebulizer masks with over 98% accuracy.
+          - Performed automated data labelling and annotations to multiple classes, saving time for model selection and preprocessing
+          - Implemented and tested machine learning model by curating quality assurance plan and test specifications
+          - Worked on 3 projects to build creative technological solutions that solved real business problems by taking actions
+          - Completed the deliverables well-before timelines and showed outstanding interpersonal and time-management skills
+
+  # Education
+  education:
+    enable: true
+    title: "EDUCATION"
+    index: false
+    items:
+      - title: "Master of Applied Computing (Artificial Intelligence Stream)"
+        school:
+          name: "University of Windsor, Windsor, Ontario"
+          url: "https://www.uwindsor.ca/graduate-studies/305/applied-computing"
+        date: "Jan 2022 - Sep 2023"
+        # GPA: "3.8 out of 5.0"
+        content: |-
+          - During my coursework and specialization in AI, I actively engaged in projects focused on database design, data mining, and advanced data analysis techniques. 
+          - Completed 2 full-stack projects by possessing a strong foundation in SQL, Python, data visualization, and data management techniques.
+      - title: "Bachelor of Engineering in Computer Science & Engineering"
+        school:
+          name: "Dayananda Sagar College of Engineering, Bangalore, India"
+          url: "https://www.dsce.edu.in/academics/ug/computer-science-engineering"
+        date: "Aug 2017 - Jul 2021"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          Published one papers in the MATJOURNALS Conference on Artificial Intelligence.
+          - Presented the research, "Recovering Human 3D Model from Monocular 2D Images for Detecting Postures Deformities", 2021; awarded ‘Best Paper Presentation’ in the Image Processing category.
+          - Elaborated on deep learning algorithms like BlazePose, DeepPose, OpenPose, etc. used for pose estimation.
+
+          Extracurricular Activities
+            - Organized and led workshops on Data Analytics, sharing practical insights with peers in the Computer Science program.
+            - Initiated a Data Science Club, fostering a collaborative environment for hands-on projects and knowledge exchange.
+            - Participated in hackathons, leveraging data-driven approaches to tackle real-world challenges and showcase problem-solving skills.
+  
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "ACHIEVEMENTS"
+    items:
+      - title: Data Science Writer
+        content: Professional technical writer in Data Science domain (6+ years) holding 300+ articles with a background working for multiple magazines, publications, start-ups, open-source organizations, etc.
+        url: https://waliamrinal.medium.com/list/opensource-blogs-b68cf331d37d
+        image: /a1.jpeg
+      - title: Google Season of Docs`22
+        content: Aced a competition by Google to work with one of its open-source organization on a fully-funded project with a Data Science library named PySyft.
+        url: https://blog.openmined.org/openmined-featured-contributor-november-2022/
+        image: /a2.png
+      - title: GitHub Excellence
+        content: Recognized among India's top 100 contributors in 2020, with 3300+ commits across 30+ repositories with 50+ stars in personal projects. Demonstrated GitHub proficiency since 2017, amassing 7325 contributions and garnering 160+ stars and 100+ forks on personal projects and repositories.
+        url: "https://github.com/abhiwalia15?tab=overview&from=2020-12-01&to=2020-12-31"
+        image: /a3.png
+
+      - title: Top 5 Open-Source Machine Learning Recommender System Projects With Resources
+        content: Most viewed article on Medium with 100,000+ views and published in Being Human-Artificial Intelligence Magazine.
+        url: "https://becominghuman.ai/top-5-open-source-machine-learning-recommender-system-projects-with-resources-50583c4007c3"
+        image: /a4.png
+      - title: Semantic Segmentation vs. Instance Segmentation-Explained
+        content: Ranked under top 3 articles on Google SEO under semantic segmentation and instance segmentation keywords.
+        url: "https://blog.roboflow.com/difference-semantic-segmentation-instance-segmentation/"
+        image: /a5.png
+      - title: A Comprehensive Guide on Neo4j
+        content: Award and prize winning guide written for open-source data science graph database tool, "Neo4j".
+        url: "https://www.analyticsvidhya.com/blog/2022/01/a-comprehensive-guide-on-neo4j-graph-database/"
+        image: /a6.png
+
+  
+  # projects
+  projects:
+    enable: true
+    title: "ACADEMIC PROJECTS"
+    items:
+      - title: Stocks Analysis & Prediction
+        content: Designed and coded an interactive dashboard for predicting stocks prices (98% accuracy) for next 30 days.
+        image: /p1.png 
+        featured:
+          name: GitHub (36 Stars & 30 Forks)
+          link: https://github.com/abhiwalia15/AI-for-Finance-Stocks-real-time-analysis-
+        badges:
+          - "Python"
+          - "R" 
+          - "StreamLit"
+          - "LSTM"
+          - "RestAPIs"
+          - "NoSQL"
+          - "TensorFlow"
+          - "Git"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abhiwalia15/AI-for-Finance-Stocks-real-time-analysis-
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=gFDguPuGx9E
+
+
+      - title: Learn Python for DS and ML
+        content: Developed an extensive Python program covering data visualization, NumPy, pandas, web scraping, and machine learning with SciKit Learn.
+        image: /p2.png
+        featured:
+          name: GitHub (35 Stars & 14 Forks)
+          link: https://github.com/abhiwalia15/Python-for-Data-Science-and-Machine-Learning-Bootcamp
+        badges:
+          - "Pandas"
+          - "Jupyter Notebook"
+          - "NumPy"
+          - "Plotly"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abhiwalia15/Python-for-Data-Science-and-Machine-Learning-Bootcamp
+
+      - title: Facial Emotion Recognition
+        content: Achieved 94% accuracy by designing a neural network architecture to recognize 7 types of emotions in real-time.
+        image: /p3.jpeg
+        featured:
+          name: GitHub (6 Stars & 3 Forks) 
+          link: https://github.com/abhiwalia15/Facial-Expression-Recognition
+        badges:
+          - "Python"
+          - "TensorFlow"
+          - "RestAPI"
+          - "NLP"
+          - "MongoDB"
+          - "OpenCV"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abhiwalia15/Facial-Expression-Recognition
+
+      - title: IPL Team Prediction
+        content: Developed an extensive Python program to find the best performing players in cricket sports busing the dataset and technologies like data visualization, NumPy, pandas, web scraping, and machine learning with SciKit Learn.
+        image: /p4.png
+        featured:
+          name: GitHub (3 Stars & 2 Forks) 
+          link: https://github.com/imhardikj/Team-Predictions
+        badges:
+          - "Python"
+          - "TensorFlow"
+          - "Seaborn"
+          - "Plotly"
+          - "cufflinks"
+          - "MS Excel"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/imhardikj/Team-Predictions
+
+      - title: COVID-19 Cases Prediction
+        content: Conducted time series analysis on COVID-19 data, identifying trends in affected cases, deaths, and recoveries. Created data visualizations and dashboards to share valuable insights with the data science department.
+        image: /p5.png
+        featured:
+          name: GitHub (2 Stars & 1 Forks) 
+          link: https://github.com/abhiwalia15/COVID-19
+        badges:
+          - "Python"
+          - "Machine Learning"
+          - "Data Visualization"
+          - "Visualizations Dashboards"
+          - "Tensorflow.js"
+          - "OpenCV"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abhiwalia15/COVID-19
+      
+      - title: Detecting Postures Deformities
+        content: Presented at the MATJOURNALS, 2021; awarded ‘Best Paper Presentation’ in the Image Processing category. Elaborated on deep learning algorithms like BlazePose, DeepPose, OpenPose, etc. used for pose estimation.
+        image: /p6.png
+        featured:
+          name: GitHub (1 Stars & 1 Forks) 
+          link: https://github.com/abhiwalia15/Sitting-Posture-Recognition
+        badges:
+          - "Pose Estimation"
+          - "Deep Learning"
+          - "Python"
+          - "MatPlotLib"
+          - "Seaborn"
+          - "OpenCV"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abhiwalia15/Sitting-Posture-Recognition
+            
+  #Contact
+  contact:
+    enable: true
+    title: "GET IN TOUCH"
+    content: My inbox is always open 📥 Whether you have a question or just want to say hello 👋 I'll try my best to get back to you! Feel free to mail 💌 me about any relevant job updates or interesting project idea.
+    email: walia8@uwindsor.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+
+  footer:
+    # recentPosts:
+    #   path: "blogs"
+    #   count: 3
+    #   title: Recent Posts
+    #   enable: true
+    #   disableFeaturedImage: true
+    socialNetworks:
+      github: https://github.com/abhiwalia15
+      linkedin: https://www.linkedin.com/in/mrinal-walia-b0981b158/
+      instagram: https://www.instagram.com/waliamrinal/?hl=en
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: true
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
